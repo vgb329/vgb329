@@ -5,31 +5,31 @@
  *                                                                            *
  *                         This file is part of 'ekf'                         *
  ******************************************************************************/
-void err_fun(double *nom_x, double *delta_x, double *out_5294820582126360503);
-void inv_err_fun(double *nom_x, double *true_x, double *out_8291686926427668403);
-void H_mod_fun(double *state, double *out_2877994446572351358);
-void f_fun(double *state, double dt, double *out_8392934663661768923);
-void F_fun(double *state, double dt, double *out_5861153544503324366);
-void h_3(double *state, double *unused, double *out_3868186964773160293);
-void H_3(double *state, double *unused, double *out_5376435842204275973);
-void h_4(double *state, double *unused, double *out_9116905882572664513);
-void H_4(double *state, double *unused, double *out_8495510095846090169);
-void h_9(double *state, double *unused, double *out_3448913356607650645);
-void H_9(double *state, double *unused, double *out_7039253329680652696);
-void h_10(double *state, double *unused, double *out_6706949316926160379);
-void H_10(double *state, double *unused, double *out_1833084162599582565);
-void h_12(double *state, double *unused, double *out_8423237941610249871);
-void H_12(double *state, double *unused, double *out_3820450721007290520);
-void h_31(double *state, double *unused, double *out_8690560997007505884);
-void H_31(double *state, double *unused, double *out_8150915990810666832);
-void h_32(double *state, double *unused, double *out_5056002201611583228);
-void H_32(double *state, double *unused, double *out_5440093391983705918);
-void h_13(double *state, double *unused, double *out_7442253765833324764);
-void H_13(double *state, double *unused, double *out_4117750663455693000);
-void h_14(double *state, double *unused, double *out_3448913356607650645);
-void H_14(double *state, double *unused, double *out_7039253329680652696);
-void h_19(double *state, double *unused, double *out_8212180038210347555);
-void H_19(double *state, double *unused, double *out_9173260175408874980);
+void err_fun(double *nom_x, double *delta_x, double *out_2979432275415314763);
+void inv_err_fun(double *nom_x, double *true_x, double *out_8210458818486868805);
+void H_mod_fun(double *state, double *out_2095463338726842165);
+void f_fun(double *state, double dt, double *out_431075374196780526);
+void F_fun(double *state, double dt, double *out_8284872676528927080);
+void h_3(double *state, double *unused, double *out_2102870914289254584);
+void H_3(double *state, double *unused, double *out_7584385583185505203);
+void h_4(double *state, double *unused, double *out_295645676549977109);
+void H_4(double *state, double *unused, double *out_6504910247896389024);
+void h_9(double *state, double *unused, double *out_3833117803990374915);
+void H_9(double *state, double *unused, double *out_9134740444023733999);
+void h_10(double *state, double *unused, double *out_1451576847657428427);
+void H_10(double *state, double *unused, double *out_7646617256047821503);
+void h_12(double *state, double *unused, double *out_1387734146316736601);
+void H_12(double *state, double *unused, double *out_6745049292577392449);
+void h_31(double *state, double *unused, double *out_8404574603050392738);
+void H_31(double *state, double *unused, double *out_2375026812758704951);
+void h_32(double *state, double *unused, double *out_3389019376852184025);
+void H_32(double *state, double *unused, double *out_2087431086203915649);
+void h_13(double *state, double *unused, double *out_8929451567799493985);
+void H_13(double *state, double *unused, double *out_1493934397849623260);
+void h_14(double *state, double *unused, double *out_3833117803990374915);
+void H_14(double *state, double *unused, double *out_9134740444023733999);
+void h_19(double *state, double *unused, double *out_3451257868663390707);
+void H_19(double *state, double *unused, double *out_4882504419065250251);
 #define DIM 23
 #define EDIM 22
 #define MEDIM 22

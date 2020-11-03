@@ -59,9 +59,9 @@ class CarInterface(CarInterfaceBase):
       tire_stiffness_factor = 0.7
     """
 
-    tire_stiffness_factor = 1.
+    tire_stiffness_factor = 1.0
     ret.steerActuatorDelay = 0.325  # Default delay
-    ret.steerRateCost = 0.5
+    ret.steerRateCost = 0.45
     ret.steerLimitTimer = 0.8
 
 
@@ -109,7 +109,7 @@ class CarInterface(CarInterfaceBase):
       ret.lateralTuning.pid.kf = 0.00005
       ret.mass = 1565. + STD_CARGO_KG
       ret.wheelbase = 2.805
-      ret.steerRatio = 12.5
+      ret.steerRatio = 10.0
       ret.lateralTuning.pid.kiBP, ret.lateralTuning.pid.kpBP = [[0.], [0.]]
       ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.25], [0.05]]      
     elif candidate == CAR.PALISADE:

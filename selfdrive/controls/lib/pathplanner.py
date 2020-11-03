@@ -160,7 +160,7 @@ class PathPlanner():
     for steerRatio in self.sr_BPV:
       self.sr_ActuatorDelay.append( interp( sr_value, steerRatio, self.sr_ActuatorDelayV[nPos] ) )
       nPos += 1
-      if nPos > 10:
+      if nPos > 20:
         break
 
     actuatorDelay = interp( v_ego_kph, self.sr_KPH, self.sr_ActuatorDelay )
@@ -381,9 +381,9 @@ class PathPlanner():
         if delta_steer < 0:
           self.angle_steers_des_mpc = self.limit_ctrl( org_angle_steers_des, limit_steers, angle_steers )
 
-    elif v_ego_kph < 15:  # 30
-      xp = [3,10,15]
-      fp2 = [3,5,7]
+    elif v_ego_kph < 3:  # 30
+      xp = [1,2,3]
+      fp2 = [1,3,5]
       limit_steers = interp( v_ego_kph, xp, fp2 )
       self.angle_steers_des_mpc = self.limit_ctrl( org_angle_steers_des, limit_steers, angle_steers )
     elif v_ego_kph > 60: 
